@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_add_course">
+
+    <TextView
+        android:id="@+id/textViewAddCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="312dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Add Waste Article"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/edittext_articleName"
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/waste_custom_edit_text"
+        android:hint="Article Name"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="@color/black"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddCourse" />
+    <!--Article type-->
+    <EditText
+        android:id="@+id/edittext_articleType"
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/waste_custom_edit_text"
+        android:hint="Article Type"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="@color/black"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_articleName" />
+    <!--Article Image link-->
+
+    <EditText
+        android:id="@+id/edittext_articleImageLink"
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/waste_custom_edit_text"
+        android:hint="Article Image Link"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="@color/black"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_articleType" />
+
+    <!--Article link-->
+
+    <EditText
+        android:id="@+id/edittext_articleLink"
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/waste_custom_edit_text"
+        android:hint="Article Link"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="@color/black"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_articleImageLink" />
+
+    <!--Article Description-->
+    <EditText
+        android:id="@+id/edittext_articleDescription"
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/waste_custom_edit_text"
+        android:hint="Article Description "
+        android:inputType="textImeMultiLine|textMultiLine"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="@color/black"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_articleLink" />
+
+    <Button
+        android:id="@+id/AddArticleBtn"
+        android:layout_width="302dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/newcustom_button_waste"
+        android:fontFamily="serif-monospace"
+        android:onClick="AddArticlebtn"
+        android:text="Add article"
+        android:clickable="true"
+
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_articleDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Focused state -->
+    <item android:state_focused="true">
+        <layer-list>
+            <item android:drawable="@color/customgreen" /> <!-- Change to your desired focused color -->
+            <item android:right="1dp" android:left="1dp" android:top="1dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/white" /> <!-- Change to your desired background color -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Unfocused state -->
+    <item>
+        <layer-list>
+            <item android:drawable="@color/customgreen" /> <!-- Change to your desired unfocused color -->
+            <item android:right="1dp" android:left="1dp" android:top="1dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/white" /> <!-- Change to your desired background color -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+<include layout="@layout/toolbar" android:id="@+id/include_toolbar"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView_HomePage"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="18dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:fontFamily="sans-serif-condensed-light"-->
+<!--        android:text="Home Page"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.47"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <!--recycler view for our data-->
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/idRVCourses"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_below="@+id/textView_HomePage"/>-->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/include_toolbar"
+        android:layout_marginTop="20dp"
+        android:divider="@color/white"
+        android:dividerHeight="8dp"
+        android:id="@+id/HomepageListviewId"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:onClick="AddCourse"
+        app:backgroundTint="@color/customgreen"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/baseline_add_24"
+        app:background="@color/black_shade_1"
+        app:tint="@color/white" />
+
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_edit_course">
+
+    <TextView
+        android:id="@+id/textView_EditArticleActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="312dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Edit Article"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext_Edit_articleName"
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/waste_custom_edit_text"
+        android:hint="Article Name"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="@color/black"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_EditArticleActivity" />
+    <!--Article type-->
+    <EditText
+        android:id="@+id/edittext_Edit_articleType"
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/waste_custom_edit_text"
+        android:hint="Article Type"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="@color/black"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_Edit_articleName" />
+    <!--Article Image link-->
+
+    <EditText
+        android:id="@+id/edittext_Edit_articleImageLink"
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/waste_custom_edit_text"
+        android:hint="Article Image Link"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="@color/black"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_Edit_articleType" />
+
+    <!--Article link-->
+
+    <EditText
+        android:id="@+id/edittext_Edit_articleLink"
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/waste_custom_edit_text"
+        android:hint="Article Link"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="@color/black"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_Edit_articleImageLink" />
+
+    <!--Article Description-->
+    <EditText
+        android:id="@+id/edittext_Edit_articleDescription"
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/waste_custom_edit_text"
+        android:hint="Article Description "
+        android:inputType="textImeMultiLine|textMultiLine"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="@color/black"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_Edit_articleLink" />
+
+    <Button
+        android:id="@+id/Edit_UpdateArticleBtn"
+        android:layout_width="302dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/newcustom_button_waste"
+        android:clickable="true"
+        android:fontFamily="serif-monospace"
+
+        android:text="Update"
+
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_Edit_articleDescription" />
+
+    <Button
+        android:id="@+id/DeleteArticleBtn"
+        android:layout_width="302dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/newcustom_button_waste"
+        android:clickable="true"
+        android:fontFamily="serif-monospace"
+
+        android:text="Delete"
+
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_UpdateArticleBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

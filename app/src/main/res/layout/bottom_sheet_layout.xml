@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:elevation="20dp"
+    android:paddingTop="8dp"
+    android:background="@color/whitesmoke"
+    android:padding="4dp">
+    <!--text view for displaying article name-->
+    <TextView
+        android:id="@+id/textView_bottom_ArticleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="7dp"
+        android:padding="4dp"
+        android:text="Article Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--image view for displaying article image-->
+    <ImageView
+        android:id="@+id/bottom_ArticleImage"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textView_bottom_ArticleName"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="12dp"
+
+        android:padding="4dp"
+        android:src="@drawable/wastenew"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_bottom_ArticleName" />
+
+    <!--text view for displaying article description-->
+    <TextView
+        android:id="@+id/textView_bottom_ArticleDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:padding="3dp"
+        android:text="Article Description"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/bottom_ArticleImage"
+        app:layout_constraintTop_toBottomOf="@+id/textView_bottom_ArticleName" />
+
+    <!--text view for displaying article type-->
+    <TextView
+        android:id="@+id/textView_bottom_ArticleType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:padding="3dp"
+        android:text="Article Type"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/bottom_ArticleImage"
+        app:layout_constraintTop_toBottomOf="@+id/textView_bottom_ArticleDescription" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/bottom_ArticleImage"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_ArticleImage">
+
+        <!--button for editing course-->
+        <Button
+            android:id="@+id/idBtnUpdateArticle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/new_bottomsheetbtn"
+            android:text="Edit Article"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <!--button for viewing course details-->
+        <Button
+            android:id="@+id/idBtnViewDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/new_bottomsheetbtn"
+            android:text="View Article"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
