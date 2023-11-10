@@ -1,4 +1,4 @@
-# eArticle
+# Garboogle
 
 This project is a basic CRUD using Firebase in Android studio (java).
 1. Create account
