@@ -2,7 +2,7 @@
 
 
 
-Personal Project. This project is a basic CRUD using Firebase in Android studio (java).
+This project is a basic CRUD using Firebase in Android studio (java).
 1. Registration
 2. Login
 3. View/Edit profile
