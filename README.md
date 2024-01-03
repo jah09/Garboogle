@@ -1,12 +1,13 @@
 # Garboogle
 
-This project is a basic CRUD using Firebase in Android studio (java).
+
+
+Personal Project. This project is a basic CRUD using Firebase in Android studio (java).
 1. Registration
 2. Login
 3. View/Edit profile
 4. Add/Edit/Delete article
 
-</br>
 <p align="center" ><b>Login Activity</b>  :arrow_down:</p>
 <p align="center">
 <img src="https://github.com/jah09/Garboogle/assets/81201468/d4e4a55e-5b9f-4c86-a889-e68bae4d4d91" width="250" alt="app flash screen">
